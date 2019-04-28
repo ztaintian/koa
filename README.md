@@ -1,9 +1,7 @@
 # Koa2实现基本的登录注册 #
 
 ├── Koa2  
-
 │   ├── config  
-
 │   │   ├── DBconfig.js// 数据库配置文件  
 |   ├── controller  
 |   |   ├──userController.js  
