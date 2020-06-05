@@ -20,10 +20,16 @@ app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
 
-
+// koa2使用ejs模板更改后缀为.html的方法
+// 注释
+// app.use(views(__dirname + '/views', {
+//   extension: 'ejs'
+// }))
+// 增加
 app.use(views(__dirname + '/views', {   //按照自己的目录更改路径
   map : {html:'ejs'}
 }))
+
 
 // logger
 app.use(async (ctx, next) => {
