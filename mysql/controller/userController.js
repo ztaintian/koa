@@ -1,8 +1,8 @@
 //Koa2/controller/userController.js
 const user = require("../service/user")
 async function checkLogin(ctx, next) {
-  let { phone, password } = ctx.request.body
-  let data = await user.checkUser(phone, password)
+  let { username, password } = ctx.request.body
+  let data = await user.checkUser(username, password)
   return ctx.response.body = data
 }
 async function registerUser(ctx, next) {
