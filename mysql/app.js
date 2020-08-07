@@ -2,9 +2,9 @@
 const Koa = require("koa")
 const router = require("./router/router")
 const bodyParser = require("koa-body")
-
+// const loggerAsync  = require('./middleware/logger-async')
 var app = new Koa()
-
+// app.use(loggerAsync)
 app.use(bodyParser())
 app.use(router.routes())
 
